@@ -12,7 +12,7 @@ Run shell command easy in your laravel projects
 Via Composer
 
 ``` bash
-$ composer require josh/php-terminal
+$ composer require josh/laravel-terminal
 ```
 
 ##Config
