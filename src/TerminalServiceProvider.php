@@ -1,0 +1,26 @@
+<?php
+
+namespace Josh\Terminal;
+
+use Illuminate\Foundation\Application;
+use Illuminate\Support\ServiceProvider;
+
+class TerminalServiceProvider extends ServiceProvider
+{
+    /**
+     * Register terminal command singleton
+     * and set configs for terminal
+     *
+     * @author Alireza Josheghani <josheghani.dev@gmail.com>
+     * @since 13 Sep, 2017
+     */
+    public function register()
+    {
+        $this->app->singleton('terminal', function (Application $app){
+
+            $aliases = config('terminal.aliases');
+
+            return $app->make(Console::class)->aliases($aliases);
+        });
+    }
+}

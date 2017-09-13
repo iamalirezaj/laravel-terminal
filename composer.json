@@ -1,0 +1,22 @@
+{
+  "name": "josh/php-terminal",
+  "type": "library",
+  "keywords": ["Terminal", "php-shellcommand", "command"],
+  "description": "Terminal shell command in php",
+  "authors": [
+    {
+      "name": "Alireza Josheghani",
+      "email": "josheghani.dev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Josh\\Terminal\\": "src/"
+    }
+  },
+  "require": {
+    "php": "~5.5|~7.0",
+    "illuminate/support": "~5.1"
+  },
+  "license": "MIT"
+}
