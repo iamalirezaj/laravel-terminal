@@ -8,6 +8,19 @@ use Illuminate\Support\ServiceProvider;
 class TerminalServiceProvider extends ServiceProvider
 {
     /**
+     * publish config file into project config directory
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([
+
+            __DIR__ . '/../config.php' => config_path( 'terminal.php' ),
+        ]);
+    }
+
+    /**
      * Register terminal command singleton
      * and set configs for terminal
      *
