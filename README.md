@@ -33,6 +33,24 @@ and the following Facade to the aliases part
 'Terminal' => Josh\Terminal\TerminalFacade::class
 ```
 
+and then run
+``` bash
+php artisan vendor:publish
+```
+for generating terminal config file into main config directory
+
+## Usage
+You can run Terminal shell commands in laravel just like this:
+
+```php
+$response = \Terminal::command('ls')->execute();
+```
+
+and you can get output of command just like this:
+```php
+return $response->getBody()->getContents();
+```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
