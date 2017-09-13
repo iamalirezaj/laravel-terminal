@@ -1,8 +1,8 @@
 {
-  "name": "josh/php-terminal",
+  "name": "josh/laravel-terminal",
   "type": "library",
-  "keywords": ["Terminal", "php-shellcommand", "command"],
-  "description": "Terminal shell command in php",
+  "keywords": ["laravel", "Terminal", "php-shellcommand", "command"],
+  "description": "Terminal shell command in laravel",
   "authors": [
     {
       "name": "Alireza Josheghani",
