@@ -14,9 +14,17 @@
       "Josh\\Terminal\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Josh\\Terminal\\": "tests"
+    }
+  },
   "require": {
     "php": "~5.5|~7.0",
     "illuminate/support": "~5.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "4.*"
   },
   "license": "MIT"
 }
