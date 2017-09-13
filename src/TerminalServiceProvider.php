@@ -20,7 +20,7 @@ class TerminalServiceProvider extends ServiceProvider
 
             $aliases = config('terminal.aliases');
 
-            return $app->make(Console::class)->aliases($aliases);
+            return $app->make(Command::class)->aliases($aliases);
         });
     }
 }
