@@ -155,7 +155,23 @@ class Command extends Console
             throw new \Exception('Command notfound!');
         }
 
+        $this->clearCommand();
+
         return $this->command;
+    }
+
+    /**
+     * Clear the generated command
+     *
+     * @author Alireza Josheghani <josheghani.dev@gmail.com>
+     * @since 2 Oct, 2017
+     * @return $this
+     */
+    public function clearCommand()
+    {
+        $this->command = '';
+
+        return $this;
     }
 
     /**
