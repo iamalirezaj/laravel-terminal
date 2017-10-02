@@ -151,13 +151,15 @@ class Command extends Console
      */
     public function getCommand()
     {
-        if(empty($this->command)){
+        $command = $this->command;
+
+        if(empty($command)){
             throw new \Exception('Command notfound!');
         }
 
         $this->clearCommand();
 
-        return $this->command;
+        return $command;
     }
 
     /**
