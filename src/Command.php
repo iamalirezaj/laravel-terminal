@@ -79,6 +79,8 @@ class Command extends Console
     {
         $this->options[] = $option;
 
+        $this->command .= ( ! is_null($option) ? $option : '' );
+
         return $this;
     }
 
@@ -98,6 +100,11 @@ class Command extends Console
         $this->command .= $key . ( is_null($value) ? '' : '=' . $value );
 
         return $this;
+    }
+
+    public function orOption($option)
+    {
+        return $this->addOption(" | " . $option);
     }
 
     /**
