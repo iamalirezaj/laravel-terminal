@@ -8,7 +8,6 @@ return [
      * for example we can call list command intent of ls command with this config
      */
     'aliases' => [
-
         'list' => 'ls'
     ]
 ];
