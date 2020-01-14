@@ -10,8 +10,8 @@ Run shell command easy in your laravel projects
 **The package is in process.**
 
 # Requirement
-* Laravel ^5.1
-* PHP ^5.5
+* Laravel ^6
+* PHP ^7.2
 
 ## Install
 
